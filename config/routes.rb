@@ -11,4 +11,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :coffees, only: [ :index ]
+  resources :orders, only: [ :index ]
+  resources :order_items, only: [ :index ]
+  resources :users, only: [ :index ]
+
+  root "pages#home"  # ตั้งให้หน้าแรกเป็น home
+  get "about", to: "pages#about"
+  get "contact", to: "pages#contact"
 end
