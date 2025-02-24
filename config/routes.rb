@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   root "pages#home"  # ตั้งให้หน้าแรกเป็น home
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
+  get "menu", to: "coffees#menu"
 end

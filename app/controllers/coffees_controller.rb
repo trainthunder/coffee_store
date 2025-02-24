@@ -3,4 +3,7 @@ class CoffeesController < ApplicationController
     @coffees = Coffee.all
     # render json: @coffees
   end
+
+  def menu
+  end
 end
